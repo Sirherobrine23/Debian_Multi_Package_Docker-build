@@ -32,9 +32,9 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
-    dos2unix $PRESCRIPT
-    bash $PRESCRIPT
-    rm -rf $PRESCRIPT
+    dos2unix /tmp/$asss-build/$PRESCRIPT
+    bash /tmp/$asss-build/$PRESCRIPT
+    rm -rf /tmp/$asss-build/$PRESCRIPT
     fi
 
     #----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ do
     fi
 
     # Execute in all bin foldes 
-    for abin in $(find . -name '*bin')
+    for abin in $(find /tmp/$asss-build/ -name '*bin')
     do
     chmod a+x ${abin}/*
     chmod 775 ${abin}/*

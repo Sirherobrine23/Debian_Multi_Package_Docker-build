@@ -37,7 +37,7 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
-        export DORRS
+        export DORRS=$(echo "$asss")
         export PRESCRIPT
         script-sh23
     fi

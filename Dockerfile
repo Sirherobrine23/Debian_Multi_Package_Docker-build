@@ -11,3 +11,6 @@ RUN chmod a+x /usr/sbin/init_23
 ADD script-sh23 /usr/sbin/script-sh23
 RUN dos2unix /usr/sbin/script-sh23
 RUN chmod a+x /usr/sbin/script-sh23
+ADD UNIscript-sh23 /usr/sbin/UNIscript-sh23
+RUN dos2unix /usr/sbin/UNIscript-sh23
+RUN chmod a+x /usr/sbin/UNIscript-sh23

@@ -3,10 +3,10 @@ on:
   push:
 
 env:
- IMAGE1: sirherobrine23/public-debian-packages-copiler
+ IMAGE1: sirherobrine23/public-multi-debian-packages-copiler
 
 jobs:
-  build1:
+  Docker:
     runs-on: ubuntu-latest
     steps:
      - name: Checkout

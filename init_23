@@ -33,7 +33,7 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
-        export $asss
+        export DORRS=$(echo "$asss")
         . script-sh23
     fi
 
@@ -89,6 +89,12 @@ do
     # Copilando o arquivo
     echo "vamos criar um pacote com as seguintes configurações: $DEB_OUTPUT"
     dpkg-deb --build /tmp/$asss-build/. /tmp/topublish/$DEB_OUTPUT && success=0 || exit 23
+    echo "Done"
+    echo
+    echo
+    echo
+    echo
+    
 done
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 #Publish

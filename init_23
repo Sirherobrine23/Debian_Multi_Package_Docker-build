@@ -21,6 +21,7 @@ fi
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 for asss in packages/*
 do
+    mkdir -p /tmp/$asss-build/
     cp -rf $asss/. /tmp/$asss-build/
     # removendo arquivos do diretorio para a pasta /tmp/deb-copiler
     rm -rf /tmp/$asss-build/.git*

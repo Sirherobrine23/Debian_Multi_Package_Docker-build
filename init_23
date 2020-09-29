@@ -42,6 +42,16 @@ do
         script-sh23
     fi
 
+    if [ $UNISCRIPT = 'true' ]
+    then
+        dos2unix $PRESCRIPT
+        export DORRS=$(echo "$asss")
+        export DORRSs=$(pwd)
+        export PRESCRIPT
+        UNIscript-sh23
+        rm -rf $PRESCRIPT        
+    fi
+
     #----------------------------------------------------------------------------------------------------------------------------------------------------
     # Nome do Pacotes
 

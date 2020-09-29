@@ -45,8 +45,8 @@ do
     #----------------------------------------------------------------------------------------------------------------------------------------------------
     # Nome do Pacotes
 
-    [ -d DEBIAN ] && DEBIAN_DIR=DEBIAN
-    [ -d debian ] && DEBIAN_DIR=debian
+    [ -d /tmp/$asss-build/DEBIAN ] && DEBIAN_DIR=DEBIAN
+    [ -d /tmp/$asss-build/debian ] && DEBIAN_DIR=debian
 
     echo "Diretorio do arquivos do Debian Package: /tmp/$asss-build/$DEBIAN_DIR "
 

@@ -6,4 +6,8 @@ RUN apt-get -qq update && \
     rm -rf /var/lib/apt/lists/* && \
     apt clean
 ADD init_23 /usr/sbin/init_23
+RUN dos2unix /usr/sbin/init_23
 RUN chmod a+x /usr/sbin/init_23
+ADD script-sh23 /usr/sbin/script-sh23
+RUN dos2unix /usr/sbin/script-sh23
+RUN chmod a+x /usr/sbin/script-sh23

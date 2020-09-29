@@ -32,9 +32,8 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
-    dos2unix /tmp/$asss-build/$PRESCRIPT
-    bash /tmp/$asss-build/$PRESCRIPT
-    rm -rf /tmp/$asss-build/$PRESCRIPT
+        export $asss
+        . script-sh23
     fi
 
     #----------------------------------------------------------------------------------------------------------------------------------------------------

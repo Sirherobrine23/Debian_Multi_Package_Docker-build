@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $asss
+dos2unix /tmp/$asss-build/$PRESCRIPT
+bash /tmp/$asss-build/$PRESCRIPT
+rm -rf /tmp/$asss-build/$PRESCRIPT

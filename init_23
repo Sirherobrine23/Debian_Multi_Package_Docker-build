@@ -20,7 +20,11 @@ fi
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 for asss in packages/*
-do
+do  
+    echo
+    echo
+    echo
+    echo
     mkdir -p /tmp/$asss-build/
     cp -rf $asss/. /tmp/$asss-build/
     # removendo arquivos do diretorio para a pasta /tmp/deb-copiler
@@ -33,8 +37,9 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
-        export DORRS=$(echo "$asss")
-        . script-sh23
+        export DORRS
+        export PRESCRIPT
+        script-sh23
     fi
 
     #----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -90,10 +95,7 @@ do
     echo "vamos criar um pacote com as seguintes configurações: $DEB_OUTPUT"
     dpkg-deb --build /tmp/$asss-build/. /tmp/topublish/$DEB_OUTPUT && success=0 || exit 23
     echo "Done"
-    echo
-    echo
-    echo
-    echo
+
     
 done
 #----------------------------------------------------------------------------------------------------------------------------------------------------

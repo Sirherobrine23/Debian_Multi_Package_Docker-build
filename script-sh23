@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $DORRS
-dos2unix /tmp/$DORRS-build/$PRESCRIPT
-bash /tmp/$DORRS-build/$PRESCRIPT
-rm -rf /tmp/$DORRS-build/$PRESCRIPT
+cd /tmp/$DORRS-build/
+dos2unix $PRESCRIPT
+bash $PRESCRIPT
+rm -rf $PRESCRIPT

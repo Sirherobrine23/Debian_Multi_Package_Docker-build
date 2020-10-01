@@ -37,19 +37,21 @@ do
 
     if [ $SCRIPT = 'true' ]
     then
+        [ -e $PRESCRIPT ] && echo || exit 25
         export DORRS=$(echo "$asss")
         export PRESCRIPT
         script-sh23
+        rm -rf $PRESCRIPT
     fi
 
     if [ $UNISCRIPT = 'true' ]
     then
+        [ -e $PRESCRIPT ] && echo || exit 25
         dos2unix $PRESCRIPT
         export DORRS=$(echo "$asss")
         export DORRSs=$(pwd)
         export PRESCRIPT
         UNIscript-sh23
-        rm -rf $PRESCRIPT        
     fi
 
     #----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,8 +107,6 @@ do
     echo "vamos criar um pacote com as seguintes configurações: $DEB_OUTPUT"
     dpkg-deb --build /tmp/$asss-build/. /tmp/topublish/$DEB_OUTPUT && success=0 || exit 23
     echo "Done"
-
-    
 done
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 #Publish

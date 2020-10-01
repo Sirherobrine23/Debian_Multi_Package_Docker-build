@@ -2,4 +2,3 @@
 cd /tmp/$DORRS-build/
 dos2unix $PRESCRIPT
 bash $PRESCRIPT
-rm -rf $PRESCRIPT

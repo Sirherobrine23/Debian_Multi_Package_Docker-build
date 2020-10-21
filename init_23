@@ -74,7 +74,7 @@ do
     # preinst
     if [ -e /tmp/$asss-build/$DEBIAN_DIR/preinst ]
     then 
-    chmod 775 /tmp/$asss-build/$DEBIAN_DIR/postinst
+    chmod 775 /tmp/$asss-build/$DEBIAN_DIR/preinst
     fi
     # prerme
     if [ -e /tmp/$asss-build/$DEBIAN_DIR/prerme ]
